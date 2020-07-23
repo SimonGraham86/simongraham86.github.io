@@ -2644,6 +2644,7 @@ input, select, textarea {
 
 	.gif-image {
 		max-width: 90%;
+		min-width: 60%;
 		height: auto;
 	}
 
