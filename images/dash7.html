@@ -1,0 +1,86 @@
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+  
+  <head>
+    
+      <meta charset="utf-8">
+      <title>Bokeh Plot</title>
+      
+      
+        
+          
+        
+        
+          
+        <script type="text/javascript" src="https://cdn.bokeh.org/bokeh/release/bokeh-2.1.1.min.js" integrity="sha384-kLr4fYcqcSpbuI95brIH3vnnYCquzzSxHPU6XGQCIkQRGJwhg0StNbj1eegrHs12" crossorigin="anonymous"></script>
+        <script type="text/javascript" src="https://cdn.bokeh.org/bokeh/release/bokeh-gl-2.1.1.min.js" integrity="sha384-cT9JaBz7GiRXdENrJLZNSC6eMNF3nh3fa5fTF51Svp+ukxPdwcU5kGXGPBgDCa2j" crossorigin="anonymous"></script>
+        <script type="text/javascript">
+            Bokeh.set_log_level("info");
+        </script>
+        
+      
+      
+    
+  </head>
+  
+  
+  <body>
+    
+      
+        
+          
+          
+            
+              <div class="bk-root" id="50312b7f-6f31-4082-9ec1-4a4dae370c5e" data-root-id="3445"></div>
+            
+          
+        
+      
+      
+        <script type="application/json" id="4034">
+          {"9c73b7f0-d8ae-49df-b78b-1ef4702bcb0d":{"roots":{"references":[{"attributes":{"callback":null,"mode":"hline","renderers":[{"id":"3484"}],"tooltips":[["Local Authority","@__x__values_original"],["Take-up rate","@{Take-up rate}"]]},"id":"3495","type":"HoverTool"},{"attributes":{},"id":"3469","type":"HelpTool"},{"attributes":{"fill_alpha":{"value":0.1},"fill_color":{"value":"#1f77b4"},"height":{"value":0.7},"line_alpha":{"value":0.1},"line_color":{"value":"#1f77b4"},"line_width":{"value":2},"right":{"field":"Take-up rate"},"y":{"field":"__x__values","transform":{"id":"3480"}}},"id":"3483","type":"HBar"},{"attributes":{},"id":"3489","type":"BasicTickFormatter"},{"attributes":{"source":{"id":"3444"}},"id":"3485","type":"CDSView"},{"attributes":{"active_drag":"auto","active_inspect":"auto","active_multi":null,"active_scroll":{"id":"3465"},"active_tap":"auto","tools":[{"id":"3464"},{"id":"3465"},{"id":"3466"},{"id":"3467"},{"id":"3468"},{"id":"3469"},{"id":"3495"}]},"id":"3471","type":"Toolbar"},{"attributes":{"overlay":{"id":"3470"}},"id":"3466","type":"BoxZoomTool"},{"attributes":{"data":{"Take-up rate":{"__ndarray__":"AAAAAAAAPkAAAAAAAAA/QP///////zxA////////PEABAAAAAAA8QAAAAAAAgEBAAQAAAAAAPEAAAAAAAAA/QP///////zxAAAAAAAAAQEAAAAAAAIBBQAAAAAAAgEBA","dtype":"float64","order":"little","shape":[12]},"__x__values":[0,1,2,3,4,5,6,7,8,9,10,11],"__x__values_original":["Northern Ireland","Antrim and Newtownabbey","Ards and North Down","Armagh City, Banbridge and Craigavon","Belfast","Causeway Coast and Glens","Derry City and Strabane","Fermanagh and Omagh","Lisburn and Castlereagh","Mid and East Antrim","Mid Ulster","Newry, Mourne and Down"]},"selected":{"id":"3491"},"selection_policy":{"id":"3492"}},"id":"3444","type":"ColumnDataSource"},{"attributes":{"bottom_units":"screen","fill_alpha":0.5,"fill_color":"lightgrey","left_units":"screen","level":"overlay","line_alpha":1.0,"line_color":"black","line_dash":[4,4],"line_width":2,"right_units":"screen","top_units":"screen"},"id":"3470","type":"BoxAnnotation"},{"attributes":{"code":"\n                                    var labels = {0: 'Northern Ireland', 1: 'Antrim and Newtownabbey', 2: 'Ards and North Down', 3: 'Armagh City, Banbridge and Craigavon', 4: 'Belfast', 5: 'Causeway Coast and Glens', 6: 'Derry City and Strabane', 7: 'Fermanagh and Omagh', 8: 'Lisburn and Castlereagh', 9: 'Mid and East Antrim', 10: 'Mid Ulster', 11: 'Newry, Mourne and Down'};\n                                    return labels[tick];\n                                    "},"id":"3478","type":"FuncTickFormatter"},{"attributes":{"click_policy":"hide","items":[{"id":"3494"}],"visible":false},"id":"3493","type":"Legend"},{"attributes":{"axis_label":"Local Authority","formatter":{"id":"3478"},"ticker":{"id":"3497"}},"id":"3460","type":"LinearAxis"},{"attributes":{},"id":"3491","type":"Selection"},{"attributes":{},"id":"3492","type":"UnionRenderers"},{"attributes":{"fill_color":{"value":"#1f77b4"},"height":{"value":0.7},"line_color":{"value":"#1f77b4"},"line_width":{"value":2},"right":{"field":"Take-up rate"},"y":{"field":"__x__values","transform":{"id":"3480"}}},"id":"3482","type":"HBar"},{"attributes":{"below":[{"id":"3456"}],"center":[{"id":"3459"},{"id":"3463"},{"id":"3493"}],"left":[{"id":"3460"}],"output_backend":"webgl","plot_height":400,"plot_width":900,"renderers":[{"id":"3484"}],"sizing_mode":"fixed","title":{"id":"3446"},"toolbar":{"id":"3471"},"toolbar_location":null,"x_range":{"id":"3448"},"x_scale":{"id":"3452"},"y_range":{"id":"3450"},"y_scale":{"id":"3454"}},"id":"3445","subtype":"Figure","type":"Plot"},{"attributes":{"text":"Percentage Employments Furloughed By Local Authorities"},"id":"3446","type":"Title"},{"attributes":{},"id":"3465","type":"WheelZoomTool"},{"attributes":{},"id":"3448","type":"DataRange1d"},{"attributes":{},"id":"3468","type":"ResetTool"},{"attributes":{"range":{"id":"3450"}},"id":"3480","type":"Dodge"},{"attributes":{},"id":"3450","type":"DataRange1d"},{"attributes":{},"id":"3454","type":"LinearScale"},{"attributes":{},"id":"3452","type":"LinearScale"},{"attributes":{"axis":{"id":"3456"},"ticker":null},"id":"3459","type":"Grid"},{"attributes":{},"id":"3467","type":"SaveTool"},{"attributes":{"axis_label":"Percentage","formatter":{"id":"3489"},"ticker":{"id":"3457"}},"id":"3456","type":"LinearAxis"},{"attributes":{"data_source":{"id":"3444"},"glyph":{"id":"3482"},"hover_glyph":null,"muted_glyph":null,"nonselection_glyph":{"id":"3483"},"selection_glyph":null,"view":{"id":"3485"}},"id":"3484","type":"GlyphRenderer"},{"attributes":{},"id":"3457","type":"BasicTicker"},{"attributes":{},"id":"3464","type":"PanTool"},{"attributes":{"axis":{"id":"3460"},"dimension":1,"ticker":null},"id":"3463","type":"Grid"},{"attributes":{"label":{"value":" Take-up rate"},"renderers":[{"id":"3484"}]},"id":"3494","type":"LegendItem"},{"attributes":{"ticks":[0,1,2,3,4,5,6,7,8,9,10,11]},"id":"3497","type":"FixedTicker"}],"root_ids":["3445"]},"title":"Bokeh Application","version":"2.1.1"}}
+        </script>
+        <script type="text/javascript">
+          (function() {
+            var fn = function() {
+              Bokeh.safely(function() {
+                (function(root) {
+                  function embed_document(root) {
+                    
+                  var docs_json = document.getElementById('4034').textContent;
+                  var render_items = [{"docid":"9c73b7f0-d8ae-49df-b78b-1ef4702bcb0d","root_ids":["3445"],"roots":{"3445":"50312b7f-6f31-4082-9ec1-4a4dae370c5e"}}];
+                  root.Bokeh.embed.embed_items(docs_json, render_items);
+                
+                  }
+                  if (root.Bokeh !== undefined) {
+                    embed_document(root);
+                  } else {
+                    var attempts = 0;
+                    var timer = setInterval(function(root) {
+                      if (root.Bokeh !== undefined) {
+                        clearInterval(timer);
+                        embed_document(root);
+                      } else {
+                        attempts++;
+                        if (attempts > 100) {
+                          clearInterval(timer);
+                          console.log("Bokeh: ERROR: Unable to run BokehJS code because BokehJS library is missing");
+                        }
+                      }
+                    }, 10, root)
+                  }
+                })(window);
+              });
+            };
+            if (document.readyState != "loading") fn();
+            else document.addEventListener("DOMContentLoaded", fn);
+          })();
+        </script>
+    
+  </body>
+  
+</html>

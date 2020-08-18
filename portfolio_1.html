@@ -17,31 +17,54 @@
 		<!-- Wrapper -->
 			<div id="wrapper" class="divided">
 
-				<section class="spotlight style1 orient-left content-align-left image-position-center onscroll-image-fade-in">
+				<section class="banner style1 orient-left content-align-left image-position-right fullscreen onload-image-fade-in onload-content-fade-right">
 					<div class="content">
-						<h2>UK Property Data Scraper</h2>
-						<p>This app scrapes data from the UK property site Zoopla. It allows you to make certain selections such as what city, how many rooms, and your preferred price range. You can then download the results to your downloads folder.<br><br>
-						It was built using python and other third party libraries, such as bs4, pandas, requests and tkinter. <br><br>
-						See the gif below for more details.</p>
+						<h2>Northern Ireland COVID19 Analysis</h2>
+						<p>Below is an analysis of some of the ways in which COVID19 has affected the lives of people in Northern Ireland.<br><br>
+						Data was sourced from Northern Ireland Statistics and Research Agency (www.nisra.gov.uk). Pandas and Bokeh python libraries were used to create the interactive graphs.</p>
 						<span class="button-wrapper">
 							<ul class="actions stacked">
 								<li><a href="javascript:window.history.back()" class="button">Go Back</a></li>
 							</ul>
-							<ul class="actions stacked">
-								<li><a href="https://github.com/SimonGraham86/uk-property-data-scraper" class="button" target="_blank">See Github</a></li>
-							</ul>
 						</span>
 					</div>
 					<div class="image">
-						<img src="images/houses2.jpg" alt="" />
+						<img src="images/analysis2.jpg" alt="" />
 					</div>
 				</section>
 
 				<section class="wrapper style1 align-center">
-
-					<div class="image-port">
-						<img src="images/property_app.gif" alt="" class="gif-image"/>
+					<div class="inner">
+						<h2>COVID19 Analysis</h2>
+						<p>This has been a very tumultuous time for people all around the world. Many economies are, or soon will be, facing a recession. As well as that, people of every race, religion or creed have perished due to this deadly virus. <br></p>
+						<h3>Related Deaths in Northen Ireland</h3>
+						<p>We'll start by looking at the weekly death rates (to 31st July) in Northern Ireland.</p>
+						<embed type="text/html" src="images/dash1.html" width="500" height="400" >
+						<embed type="text/html" src="images/dash2.html" width="500" height="400" >
+						<p>After the first death in w/e 20th March, there was sharp rise in weekly deaths until it peaked at 128 in the sixth week (w/e 24th April).
+						<br>Since then, the number of weekly deaths has declined, and that can be seen in the cumulative curve beginning to plateau from the middle of June. As of 31st July, 854 deaths have been registered across the region. </p>
+						<embed type="text/html" src="images/dash3.html" width="950" height="450" >
+						<p>Looking at the overall deaths by Local Authority, it's not surprising that the Belfast area (245) has the highest, given it's larger population and higher per capita figure. Fermanagh and Omagh recorded the lowest deaths in this period, with only 17 to the 31st July.</p>
+						<h3>The Concerns Of The Northern Ireland Public</h3>
+						<p>There was an opinion survey conducted during the period of 21st April to 22nd June, with a total of 925 interviews taking place.<br>
+						Participants were asked in which ways COVID19 was affecting their lives and what has been the biggest affect. The responses to these questions can be seen in the graphs below.<i> (NB. There is currently an issue with the legend function of the pie chart. Please hover over the chart to learn more about the segments)</i></p>
+						<embed type="text/html" src="images/dash4.html" width="500" height="400" >
+						<embed type="text/html" src="images/dash5.html" width="500" height="400" >
+						<p>The thing that has affected most of the participants is being unable to make plans(66%).<br> 
+						The personal travel plans of 60% of the participants have been affected, with foreign travel being restricted during the period.<br>
+						Worryingly, 58% of the respondants have said that the crisis has affected their well-being.<br>
+						It has had an affect on the household finances of 30%.</p>
+						<p>When asked what the biggest affect has been, nearly 16% answered their well-being. This was followed closely by work, education and relationships, with 13%, 12% and 11% respectively.</p>
+						<h3>Jobs in Northern Ireland</h3>
+						<p>One of the major consequences of the pandemic is how it has affected the economy, especially the labour market.<br>
+						As part of the Jobs Retention Scheme, many employments were furloughed. Below, the graphs show the percentage of employments furloughed by Industry and Local Authority. The data is taken as of 30th June 2020.</p>
+						<embed type="text/html" src="images/dash6.html" width="950" height="450" >
+						<p>The sector with the highest percentage of furloughed employments in this period was Accommodation & Food Services, with 78%. Public sectors, such as Health, Education and Public Administration had some of the lowest take-up rates, all of which were under 10%.</p>
+						<embed type="text/html" src="images/dash7.html" width="950" height="450" >
+						<p>The Local Authorities with the lowest take-up rate were Belfast and Derry City & Strabane, both with 28%. This may be due to more jobs in these areas being in less affected industries, such as IT and Finance.
+						The worst-hit Local Authority was Mid-Ulster, with a take-up rate of 35%.</p>
 					</div>
+					
 				</section>
 
 				

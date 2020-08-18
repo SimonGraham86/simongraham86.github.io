@@ -1,0 +1,86 @@
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+  
+  <head>
+    
+      <meta charset="utf-8">
+      <title>Bokeh Plot</title>
+      
+      
+        
+          
+        
+        
+          
+        <script type="text/javascript" src="https://cdn.bokeh.org/bokeh/release/bokeh-2.1.1.min.js" integrity="sha384-kLr4fYcqcSpbuI95brIH3vnnYCquzzSxHPU6XGQCIkQRGJwhg0StNbj1eegrHs12" crossorigin="anonymous"></script>
+        <script type="text/javascript" src="https://cdn.bokeh.org/bokeh/release/bokeh-gl-2.1.1.min.js" integrity="sha384-cT9JaBz7GiRXdENrJLZNSC6eMNF3nh3fa5fTF51Svp+ukxPdwcU5kGXGPBgDCa2j" crossorigin="anonymous"></script>
+        <script type="text/javascript">
+            Bokeh.set_log_level("info");
+        </script>
+        
+      
+      
+    
+  </head>
+  
+  
+  <body>
+    
+      
+        
+          
+          
+            
+              <div class="bk-root" id="8ed1adc5-fff9-40fe-adbb-df90298f7047" data-root-id="2229"></div>
+            
+          
+        
+      
+      
+        <script type="application/json" id="3676">
+          {"f074b1f8-6317-4542-b3a0-241daafa23f5":{"roots":{"references":[{"attributes":{},"id":"2232","type":"DataRange1d"},{"attributes":{"fill_color":{"value":"green"},"line_color":{"value":"green"},"size":{"units":"screen","value":7},"x":{"field":"__x__values"},"y":{"field":"Cum Covid Deaths"}},"id":"2281","type":"Scatter"},{"attributes":{"axis":{"id":"2240"},"ticker":null},"id":"2243","type":"Grid"},{"attributes":{"axis_label":"No. Of Deaths","formatter":{"id":"2272"},"ticker":{"id":"2245"}},"id":"2244","type":"LinearAxis"},{"attributes":{"fill_alpha":{"value":0.1},"fill_color":{"value":"green"},"line_alpha":{"value":0.1},"line_color":{"value":"green"},"size":{"units":"screen","value":7},"x":{"field":"__x__values"},"y":{"field":"Cum Covid Deaths"}},"id":"2282","type":"Scatter"},{"attributes":{},"id":"2238","type":"LinearScale"},{"attributes":{},"id":"2236","type":"LinearScale"},{"attributes":{"data_source":{"id":"2279"},"glyph":{"id":"2281"},"hover_glyph":null,"muted_glyph":null,"nonselection_glyph":{"id":"2282"},"selection_glyph":null,"view":{"id":"2284"}},"id":"2283","type":"GlyphRenderer"},{"attributes":{},"id":"2234","type":"DataRange1d"},{"attributes":{"below":[{"id":"2240"}],"center":[{"id":"2243"},{"id":"2247"},{"id":"2277"}],"left":[{"id":"2244"}],"output_backend":"webgl","plot_height":350,"plot_width":450,"renderers":[{"id":"2268"},{"id":"2283"}],"sizing_mode":"fixed","title":{"id":"2230"},"toolbar":{"id":"2255"},"toolbar_location":null,"x_range":{"id":"2232"},"x_scale":{"id":"2236"},"y_range":{"id":"2234"},"y_scale":{"id":"2238"}},"id":"2229","subtype":"Figure","type":"Plot"},{"attributes":{"axis_label":"Week Ending","formatter":{"id":"2262"},"major_label_orientation":1.5707963267948966,"ticker":{"id":"2296"}},"id":"2240","type":"LinearAxis"},{"attributes":{"axis":{"id":"2244"},"dimension":1,"ticker":null},"id":"2247","type":"Grid"},{"attributes":{"line_alpha":0.1,"line_color":"green","line_width":2,"x":{"field":"__x__values"},"y":{"field":"Cum Covid Deaths"}},"id":"2267","type":"Line"},{"attributes":{},"id":"2292","type":"Selection"},{"attributes":{},"id":"2249","type":"WheelZoomTool"},{"attributes":{},"id":"2293","type":"UnionRenderers"},{"attributes":{},"id":"2245","type":"BasicTicker"},{"attributes":{},"id":"2248","type":"PanTool"},{"attributes":{"source":{"id":"2264"}},"id":"2269","type":"CDSView"},{"attributes":{},"id":"2253","type":"HelpTool"},{"attributes":{"active_drag":"auto","active_inspect":"auto","active_multi":null,"active_scroll":{"id":"2249"},"active_tap":"auto","tools":[{"id":"2248"},{"id":"2249"},{"id":"2250"},{"id":"2251"},{"id":"2252"},{"id":"2253"},{"id":"2294"}]},"id":"2255","type":"Toolbar"},{"attributes":{"overlay":{"id":"2254"}},"id":"2250","type":"BoxZoomTool"},{"attributes":{},"id":"2275","type":"Selection"},{"attributes":{},"id":"2251","type":"SaveTool"},{"attributes":{},"id":"2276","type":"UnionRenderers"},{"attributes":{},"id":"2252","type":"ResetTool"},{"attributes":{"data":{"Cum Covid Deaths":[1,10,65,141,242,370,494,578,652,705,754,774,795,812,824,835,844,846,853,854],"__x__values":[0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19],"__x__values_original":["20/03/2020","27/03/2020","03/04/2020","10/04/2020","17/04/2020","24/04/2020","01/05/2020","08/05/2020","15/05/2020","22/05/2020","29/05/2020","05/06/2020","12/06/2020","19/06/2020","26/06/2020","03/07/2020","10/07/2020","17/07/2020","24/07/2020","31/07/2020"]},"selected":{"id":"2275"},"selection_policy":{"id":"2276"}},"id":"2264","type":"ColumnDataSource"},{"attributes":{"code":"\n                                var labels = {0: '20/03/2020', 1: '27/03/2020', 2: '03/04/2020', 3: '10/04/2020', 4: '17/04/2020', 5: '24/04/2020', 6: '01/05/2020', 7: '08/05/2020', 8: '15/05/2020', 9: '22/05/2020', 10: '29/05/2020', 11: '05/06/2020', 12: '12/06/2020', 13: '19/06/2020', 14: '26/06/2020', 15: '03/07/2020', 16: '10/07/2020', 17: '17/07/2020', 18: '24/07/2020', 19: '31/07/2020'};\n                                return labels[tick];\n                                "},"id":"2262","type":"FuncTickFormatter"},{"attributes":{"data_source":{"id":"2264"},"glyph":{"id":"2266"},"hover_glyph":null,"muted_glyph":null,"nonselection_glyph":{"id":"2267"},"selection_glyph":null,"view":{"id":"2269"}},"id":"2268","type":"GlyphRenderer"},{"attributes":{"callback":null,"mode":"vline","renderers":[{"id":"2268"}],"tooltips":[["Week Ending","@__x__values_original"],["Cum Covid Deaths","@{Cum Covid Deaths}"]]},"id":"2294","type":"HoverTool"},{"attributes":{"ticks":[0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19]},"id":"2296","type":"FixedTicker"},{"attributes":{"text":"Cumulative Covid Deaths By Week"},"id":"2230","type":"Title"},{"attributes":{"data":{"Cum Covid Deaths":[1,10,65,141,242,370,494,578,652,705,754,774,795,812,824,835,844,846,853,854],"__x__values":[0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19],"__x__values_original":["20/03/2020","27/03/2020","03/04/2020","10/04/2020","17/04/2020","24/04/2020","01/05/2020","08/05/2020","15/05/2020","22/05/2020","29/05/2020","05/06/2020","12/06/2020","19/06/2020","26/06/2020","03/07/2020","10/07/2020","17/07/2020","24/07/2020","31/07/2020"]},"selected":{"id":"2292"},"selection_policy":{"id":"2293"}},"id":"2279","type":"ColumnDataSource"},{"attributes":{},"id":"2272","type":"BasicTickFormatter"},{"attributes":{"click_policy":"hide","items":[{"id":"2278"}],"location":"bottom_right"},"id":"2277","type":"Legend"},{"attributes":{"line_color":"green","line_width":2,"x":{"field":"__x__values"},"y":{"field":"Cum Covid Deaths"}},"id":"2266","type":"Line"},{"attributes":{"bottom_units":"screen","fill_alpha":0.5,"fill_color":"lightgrey","left_units":"screen","level":"overlay","line_alpha":1.0,"line_color":"black","line_dash":[4,4],"line_width":2,"right_units":"screen","top_units":"screen"},"id":"2254","type":"BoxAnnotation"},{"attributes":{"label":{"value":" Cum Covid Deaths"},"renderers":[{"id":"2268"},{"id":"2283"}]},"id":"2278","type":"LegendItem"},{"attributes":{"source":{"id":"2279"}},"id":"2284","type":"CDSView"}],"root_ids":["2229"]},"title":"Bokeh Application","version":"2.1.1"}}
+        </script>
+        <script type="text/javascript">
+          (function() {
+            var fn = function() {
+              Bokeh.safely(function() {
+                (function(root) {
+                  function embed_document(root) {
+                    
+                  var docs_json = document.getElementById('3676').textContent;
+                  var render_items = [{"docid":"f074b1f8-6317-4542-b3a0-241daafa23f5","root_ids":["2229"],"roots":{"2229":"8ed1adc5-fff9-40fe-adbb-df90298f7047"}}];
+                  root.Bokeh.embed.embed_items(docs_json, render_items);
+                
+                  }
+                  if (root.Bokeh !== undefined) {
+                    embed_document(root);
+                  } else {
+                    var attempts = 0;
+                    var timer = setInterval(function(root) {
+                      if (root.Bokeh !== undefined) {
+                        clearInterval(timer);
+                        embed_document(root);
+                      } else {
+                        attempts++;
+                        if (attempts > 100) {
+                          clearInterval(timer);
+                          console.log("Bokeh: ERROR: Unable to run BokehJS code because BokehJS library is missing");
+                        }
+                      }
+                    }, 10, root)
+                  }
+                })(window);
+              });
+            };
+            if (document.readyState != "loading") fn();
+            else document.addEventListener("DOMContentLoaded", fn);
+          })();
+        </script>
+    
+  </body>
+  
+</html>

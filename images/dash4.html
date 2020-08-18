@@ -1,0 +1,86 @@
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+  
+  <head>
+    
+      <meta charset="utf-8">
+      <title>Bokeh Plot</title>
+      
+      
+        
+          
+        
+        
+          
+        <script type="text/javascript" src="https://cdn.bokeh.org/bokeh/release/bokeh-2.1.1.min.js" integrity="sha384-kLr4fYcqcSpbuI95brIH3vnnYCquzzSxHPU6XGQCIkQRGJwhg0StNbj1eegrHs12" crossorigin="anonymous"></script>
+        <script type="text/javascript" src="https://cdn.bokeh.org/bokeh/release/bokeh-gl-2.1.1.min.js" integrity="sha384-cT9JaBz7GiRXdENrJLZNSC6eMNF3nh3fa5fTF51Svp+ukxPdwcU5kGXGPBgDCa2j" crossorigin="anonymous"></script>
+        <script type="text/javascript">
+            Bokeh.set_log_level("info");
+        </script>
+        
+      
+      
+    
+  </head>
+  
+  
+  <body>
+    
+      
+        
+          
+          
+            
+              <div class="bk-root" id="a152bfa6-1187-4b8f-af26-66432bb08a95" data-root-id="2424"></div>
+            
+          
+        
+      
+      
+        <script type="application/json" id="3810">
+          {"836d8aea-7398-4c1c-9cd2-ab405f7169e5":{"roots":{"references":[{"attributes":{"axis_label":"Affect","formatter":{"id":"2457"},"ticker":{"id":"2476"}},"id":"2439","type":"LinearAxis"},{"attributes":{"source":{"id":"2423"}},"id":"2464","type":"CDSView"},{"attributes":{},"id":"2443","type":"PanTool"},{"attributes":{},"id":"2444","type":"WheelZoomTool"},{"attributes":{},"id":"2448","type":"HelpTool"},{"attributes":{"fill_color":{"value":"#1f77b4"},"height":{"value":0.7},"line_color":{"value":"#1f77b4"},"line_width":{"value":2},"right":{"field":"Percentage Worried About"},"y":{"field":"__x__values","transform":{"id":"2459"}}},"id":"2461","type":"HBar"},{"attributes":{"overlay":{"id":"2449"}},"id":"2445","type":"BoxZoomTool"},{"attributes":{"axis_label":"Percentage","formatter":{"id":"2468"},"ticker":{"id":"2436"}},"id":"2435","type":"LinearAxis"},{"attributes":{"fill_alpha":{"value":0.1},"fill_color":{"value":"#1f77b4"},"height":{"value":0.7},"line_alpha":{"value":0.1},"line_color":{"value":"#1f77b4"},"line_width":{"value":2},"right":{"field":"Percentage Worried About"},"y":{"field":"__x__values","transform":{"id":"2459"}}},"id":"2462","type":"HBar"},{"attributes":{},"id":"2446","type":"SaveTool"},{"attributes":{},"id":"2447","type":"ResetTool"},{"attributes":{"label":{"value":" Percentage Worried About"},"renderers":[{"id":"2463"}]},"id":"2473","type":"LegendItem"},{"attributes":{"callback":null,"mode":"hline","renderers":[{"id":"2463"}],"tooltips":[["Affect","@__x__values_original"],["Percentage Worried About","@{Percentage Worried About}"]]},"id":"2474","type":"HoverTool"},{"attributes":{"click_policy":"hide","items":[{"id":"2473"}],"visible":false},"id":"2472","type":"Legend"},{"attributes":{},"id":"2470","type":"Selection"},{"attributes":{"data":{"Percentage Worried About":{"__ndarray__":"PCZ7Gf8/MkDuHmZQaVtJQKyR2TB1dkFAoVkjzP61PUDaHwepBOhMQKkOHEQpHEVA6PceqgBUNUBt+ZxJCNIhQEXE5kYFDz1ApED6gQZeQkC2K/TBMnUwQODTYhE/HU5ABRW46Y3wMkAdo4aADWxKQDDf8j+Wc1BA/tl4eBvsDEA=","dtype":"float64","order":"little","shape":[16]},"__x__values":[0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15],"__x__values_original":["Health ","Work ","Schools And Universities ","Household Finances","Well-Being","Relationships","Caring Responsibilities","Access To Care ","Availability Of Essentials ","Access To Essentials","Transport","Personal Travel Plans","Work Travel Plans","Life Events","Unable To Make Plans","Other"]},"selected":{"id":"2470"},"selection_policy":{"id":"2471"}},"id":"2423","type":"ColumnDataSource"},{"attributes":{"bottom_units":"screen","fill_alpha":0.5,"fill_color":"lightgrey","left_units":"screen","level":"overlay","line_alpha":1.0,"line_color":"black","line_dash":[4,4],"line_width":2,"right_units":"screen","top_units":"screen"},"id":"2449","type":"BoxAnnotation"},{"attributes":{},"id":"2433","type":"LinearScale"},{"attributes":{"code":"\n                                    var labels = {0: 'Health ', 1: 'Work ', 2: 'Schools And Universities ', 3: 'Household Finances', 4: 'Well-Being', 5: 'Relationships', 6: 'Caring Responsibilities', 7: 'Access To Care ', 8: 'Availability Of Essentials ', 9: 'Access To Essentials', 10: 'Transport', 11: 'Personal Travel Plans', 12: 'Work Travel Plans', 13: 'Life Events', 14: 'Unable To Make Plans', 15: 'Other'};\n                                    return labels[tick];\n                                    "},"id":"2457","type":"FuncTickFormatter"},{"attributes":{},"id":"2468","type":"BasicTickFormatter"},{"attributes":{"below":[{"id":"2435"}],"center":[{"id":"2438"},{"id":"2442"},{"id":"2472"}],"left":[{"id":"2439"}],"output_backend":"webgl","plot_height":350,"plot_width":450,"renderers":[{"id":"2463"}],"sizing_mode":"fixed","title":{"id":"2425"},"toolbar":{"id":"2450"},"toolbar_location":null,"x_range":{"id":"2427"},"x_scale":{"id":"2431"},"y_range":{"id":"2429"},"y_scale":{"id":"2433"}},"id":"2424","subtype":"Figure","type":"Plot"},{"attributes":{"text":"Percentage of Participants Affected"},"id":"2425","type":"Title"},{"attributes":{"ticks":[0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15]},"id":"2476","type":"FixedTicker"},{"attributes":{},"id":"2427","type":"DataRange1d"},{"attributes":{"range":{"id":"2429"}},"id":"2459","type":"Dodge"},{"attributes":{"active_drag":"auto","active_inspect":"auto","active_multi":null,"active_scroll":{"id":"2444"},"active_tap":"auto","tools":[{"id":"2443"},{"id":"2444"},{"id":"2445"},{"id":"2446"},{"id":"2447"},{"id":"2448"},{"id":"2474"}]},"id":"2450","type":"Toolbar"},{"attributes":{},"id":"2436","type":"BasicTicker"},{"attributes":{},"id":"2429","type":"DataRange1d"},{"attributes":{},"id":"2431","type":"LinearScale"},{"attributes":{"axis":{"id":"2439"},"dimension":1,"ticker":null},"id":"2442","type":"Grid"},{"attributes":{},"id":"2471","type":"UnionRenderers"},{"attributes":{"axis":{"id":"2435"},"ticker":null},"id":"2438","type":"Grid"},{"attributes":{"data_source":{"id":"2423"},"glyph":{"id":"2461"},"hover_glyph":null,"muted_glyph":null,"nonselection_glyph":{"id":"2462"},"selection_glyph":null,"view":{"id":"2464"}},"id":"2463","type":"GlyphRenderer"}],"root_ids":["2424"]},"title":"Bokeh Application","version":"2.1.1"}}
+        </script>
+        <script type="text/javascript">
+          (function() {
+            var fn = function() {
+              Bokeh.safely(function() {
+                (function(root) {
+                  function embed_document(root) {
+                    
+                  var docs_json = document.getElementById('3810').textContent;
+                  var render_items = [{"docid":"836d8aea-7398-4c1c-9cd2-ab405f7169e5","root_ids":["2424"],"roots":{"2424":"a152bfa6-1187-4b8f-af26-66432bb08a95"}}];
+                  root.Bokeh.embed.embed_items(docs_json, render_items);
+                
+                  }
+                  if (root.Bokeh !== undefined) {
+                    embed_document(root);
+                  } else {
+                    var attempts = 0;
+                    var timer = setInterval(function(root) {
+                      if (root.Bokeh !== undefined) {
+                        clearInterval(timer);
+                        embed_document(root);
+                      } else {
+                        attempts++;
+                        if (attempts > 100) {
+                          clearInterval(timer);
+                          console.log("Bokeh: ERROR: Unable to run BokehJS code because BokehJS library is missing");
+                        }
+                      }
+                    }, 10, root)
+                  }
+                })(window);
+              });
+            };
+            if (document.readyState != "loading") fn();
+            else document.addEventListener("DOMContentLoaded", fn);
+          })();
+        </script>
+    
+  </body>
+  
+</html>

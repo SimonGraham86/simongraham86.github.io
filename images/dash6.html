@@ -1,0 +1,86 @@
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+  
+  <head>
+    
+      <meta charset="utf-8">
+      <title>Bokeh Plot</title>
+      
+      
+        
+          
+        
+        
+          
+        <script type="text/javascript" src="https://cdn.bokeh.org/bokeh/release/bokeh-2.1.1.min.js" integrity="sha384-kLr4fYcqcSpbuI95brIH3vnnYCquzzSxHPU6XGQCIkQRGJwhg0StNbj1eegrHs12" crossorigin="anonymous"></script>
+        <script type="text/javascript" src="https://cdn.bokeh.org/bokeh/release/bokeh-gl-2.1.1.min.js" integrity="sha384-cT9JaBz7GiRXdENrJLZNSC6eMNF3nh3fa5fTF51Svp+ukxPdwcU5kGXGPBgDCa2j" crossorigin="anonymous"></script>
+        <script type="text/javascript">
+            Bokeh.set_log_level("info");
+        </script>
+        
+      
+      
+    
+  </head>
+  
+  
+  <body>
+    
+      
+        
+          
+          
+            
+              <div class="bk-root" id="cc20f17c-4b50-45fc-b666-b617f124ddeb" data-root-id="3355"></div>
+            
+          
+        
+      
+      
+        <script type="application/json" id="3961">
+          {"7a738f9b-1805-460e-a88b-15405d6f8a47":{"roots":{"references":[{"attributes":{},"id":"3378","type":"ResetTool"},{"attributes":{"data_source":{"id":"3354"},"glyph":{"id":"3392"},"hover_glyph":null,"muted_glyph":null,"nonselection_glyph":{"id":"3393"},"selection_glyph":null,"view":{"id":"3395"}},"id":"3394","type":"GlyphRenderer"},{"attributes":{"fill_alpha":{"value":0.1},"fill_color":{"value":"#1f77b4"},"height":{"value":0.7},"line_alpha":{"value":0.1},"line_color":{"value":"#1f77b4"},"line_width":{"value":2},"right":{"field":"Take-up rate"},"y":{"field":"__x__values","transform":{"id":"3390"}}},"id":"3393","type":"HBar"},{"attributes":{},"id":"3402","type":"UnionRenderers"},{"attributes":{"fill_color":{"value":"#1f77b4"},"height":{"value":0.7},"line_color":{"value":"#1f77b4"},"line_width":{"value":2},"right":{"field":"Take-up rate"},"y":{"field":"__x__values","transform":{"id":"3390"}}},"id":"3392","type":"HBar"},{"attributes":{},"id":"3379","type":"HelpTool"},{"attributes":{},"id":"3399","type":"BasicTickFormatter"},{"attributes":{"callback":null,"mode":"hline","renderers":[{"id":"3394"}],"tooltips":[["Sector","@__x__values_original"],["Take-up rate","@{Take-up rate}"]]},"id":"3405","type":"HoverTool"},{"attributes":{},"id":"3374","type":"PanTool"},{"attributes":{"overlay":{"id":"3380"}},"id":"3376","type":"BoxZoomTool"},{"attributes":{"ticks":[0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20]},"id":"3407","type":"FixedTicker"},{"attributes":{"axis":{"id":"3370"},"dimension":1,"ticker":null},"id":"3373","type":"Grid"},{"attributes":{"data":{"Take-up rate":{"__ndarray__":"AAAAAAAAMkAAAAAAAABOQAAAAAAAgEdAAAAAAAAAFEAAAAAAAIBBQAAAAAAAgFFAAAAAAAAARUAAAAAAAAA6QAAAAAAAgFNAAAAAAAAAMEABAAAAAAAcQAAAAAAAADlAAAAAAAAAQUAAAAAAAAA7QAAAAAAAABRAAAAAAAAAEEAAAAAAAAAiQAAAAAAAgE5AAAAAAAAAS0AAAAAAAAAIQAAAAAAAADlA","dtype":"float64","order":"little","shape":[21]},"__x__values":[0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20],"__x__values_original":["Agriculture, forestry &amp; fishing","Mining, quarrying &amp; utilities","Manufacturing","Energy Production","Waste and Recycling","Construction","Wholesale and retail; repair of motor vehicles","Transport &amp; storage (inc postal)","Accommodation &amp; food services","Information &amp; communication","Finance &amp; insurance","Property","Professional, scientific &amp; technical","Business administration and support services","Public administration &amp; defence","Education","Health","Arts, entertainment, recreation and other services","Trade union, religious, political and repair","Domestic employers","Unknown and other"]},"selected":{"id":"3401"},"selection_policy":{"id":"3402"}},"id":"3354","type":"ColumnDataSource"},{"attributes":{},"id":"3367","type":"BasicTicker"},{"attributes":{"axis":{"id":"3366"},"ticker":null},"id":"3369","type":"Grid"},{"attributes":{"range":{"id":"3360"}},"id":"3390","type":"Dodge"},{"attributes":{"click_policy":"hide","items":[{"id":"3404"}],"visible":false},"id":"3403","type":"Legend"},{"attributes":{"axis_label":"Sector","formatter":{"id":"3388"},"ticker":{"id":"3407"}},"id":"3370","type":"LinearAxis"},{"attributes":{"bottom_units":"screen","fill_alpha":0.5,"fill_color":"lightgrey","left_units":"screen","level":"overlay","line_alpha":1.0,"line_color":"black","line_dash":[4,4],"line_width":2,"right_units":"screen","top_units":"screen"},"id":"3380","type":"BoxAnnotation"},{"attributes":{},"id":"3360","type":"DataRange1d"},{"attributes":{},"id":"3375","type":"WheelZoomTool"},{"attributes":{"code":"\n                                    var labels = {0: 'Agriculture, forestry &amp; fishing', 1: 'Mining, quarrying &amp; utilities', 2: 'Manufacturing', 3: 'Energy Production', 4: 'Waste and Recycling', 5: 'Construction', 6: 'Wholesale and retail; repair of motor vehicles', 7: 'Transport &amp; storage (inc postal)', 8: 'Accommodation &amp; food services', 9: 'Information &amp; communication', 10: 'Finance &amp; insurance', 11: 'Property', 12: 'Professional, scientific &amp; technical', 13: 'Business administration and support services', 14: 'Public administration &amp; defence', 15: 'Education', 16: 'Health', 17: 'Arts, entertainment, recreation and other services', 18: 'Trade union, religious, political and repair', 19: 'Domestic employers', 20: 'Unknown and other'};\n                                    return labels[tick];\n                                    "},"id":"3388","type":"FuncTickFormatter"},{"attributes":{},"id":"3364","type":"LinearScale"},{"attributes":{"label":{"value":" Take-up rate"},"renderers":[{"id":"3394"}]},"id":"3404","type":"LegendItem"},{"attributes":{},"id":"3362","type":"LinearScale"},{"attributes":{"active_drag":"auto","active_inspect":"auto","active_multi":null,"active_scroll":{"id":"3375"},"active_tap":"auto","tools":[{"id":"3374"},{"id":"3375"},{"id":"3376"},{"id":"3377"},{"id":"3378"},{"id":"3379"},{"id":"3405"}]},"id":"3381","type":"Toolbar"},{"attributes":{"source":{"id":"3354"}},"id":"3395","type":"CDSView"},{"attributes":{"text":"Percentage Employments Furloughed By Industry"},"id":"3356","type":"Title"},{"attributes":{"axis_label":"Percentage","formatter":{"id":"3399"},"ticker":{"id":"3367"}},"id":"3366","type":"LinearAxis"},{"attributes":{},"id":"3358","type":"DataRange1d"},{"attributes":{},"id":"3401","type":"Selection"},{"attributes":{"below":[{"id":"3366"}],"center":[{"id":"3369"},{"id":"3373"},{"id":"3403"}],"left":[{"id":"3370"}],"output_backend":"webgl","plot_height":400,"plot_width":900,"renderers":[{"id":"3394"}],"sizing_mode":"fixed","title":{"id":"3356"},"toolbar":{"id":"3381"},"toolbar_location":null,"x_range":{"id":"3358"},"x_scale":{"id":"3362"},"y_range":{"id":"3360"},"y_scale":{"id":"3364"}},"id":"3355","subtype":"Figure","type":"Plot"},{"attributes":{},"id":"3377","type":"SaveTool"}],"root_ids":["3355"]},"title":"Bokeh Application","version":"2.1.1"}}
+        </script>
+        <script type="text/javascript">
+          (function() {
+            var fn = function() {
+              Bokeh.safely(function() {
+                (function(root) {
+                  function embed_document(root) {
+                    
+                  var docs_json = document.getElementById('3961').textContent;
+                  var render_items = [{"docid":"7a738f9b-1805-460e-a88b-15405d6f8a47","root_ids":["3355"],"roots":{"3355":"cc20f17c-4b50-45fc-b666-b617f124ddeb"}}];
+                  root.Bokeh.embed.embed_items(docs_json, render_items);
+                
+                  }
+                  if (root.Bokeh !== undefined) {
+                    embed_document(root);
+                  } else {
+                    var attempts = 0;
+                    var timer = setInterval(function(root) {
+                      if (root.Bokeh !== undefined) {
+                        clearInterval(timer);
+                        embed_document(root);
+                      } else {
+                        attempts++;
+                        if (attempts > 100) {
+                          clearInterval(timer);
+                          console.log("Bokeh: ERROR: Unable to run BokehJS code because BokehJS library is missing");
+                        }
+                      }
+                    }, 10, root)
+                  }
+                })(window);
+              });
+            };
+            if (document.readyState != "loading") fn();
+            else document.addEventListener("DOMContentLoaded", fn);
+          })();
+        </script>
+    
+  </body>
+  
+</html>
