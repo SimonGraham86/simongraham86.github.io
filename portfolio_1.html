@@ -40,7 +40,7 @@
 						<h3>Global Chinese Investment 2000 -2014</h3>
 						<p>After reading extensively about China's Belt and Road initiative, where they invested in nearly 70 countries and international organisations, I wanted to create a dashboard looking at how much, and in what countries, they had invested.<br><br>
 						The dashboard below shows a map of the world with a colour scale showing the countries with the lowest and highest number of projects. If you hover over an individual country, you will see the total number of projects, how much was invested and a breakdown of the industries invested in. The bar charts at the bottom of the page show the volume and value of the projects split by status.<br><br>
-						The filters allow you to choose specific regions as well as timescales</p>
+						The filters allow you to choose specific regions as well as timescales. You can also filter by selecting a country on the map, or choosing a status on either of the bar charts.</p>
 						<div class='tableauPlaceholder' id='viz1601380926191' style='position: relative; margin: auto;'>
 							<noscript>
 								<a href='#'>
@@ -87,7 +87,7 @@
 						<h3>Regional Sales of Toy Company</h3>
 						<p>The dashboard below is for an international toy company which sells miniature vehicles. The company currently exports to nineteen different countries, and the dashboard shows visualisations for both orders and sales.<br><br>
 						The map shows the countries that they export to, with the bigger circles showing countries with more orders. If you hover over a circle, you will see the total orders and sales to that country from Jan 19 - July 20, as well as a breakdown of product line by proportion. The table shows country details, sorted by the number of orders made so far this year. The line charts at the bottom show the monthly sales and orders, while the bar chart shows sales by product line for this year.<br><br>
-						The filters allow you to choose specific territories and countries.</p>
+						The filter allows you to choose specific territories. You can also filter by clicking on a country on the map or in the table, selecting a specific month on the line charts, or a specific product line on the bar chart.</p>
 						<div class='tableauPlaceholder' id='viz1601381739290' style='position: relative; margin: auto;'>
 							<noscript>
 								<a href='#'>
@@ -122,6 +122,54 @@
 							} else { 
 								vizElement.style.width='100%';
 								vizElement.style.height='1527px';
+							}                     
+							var scriptElement = document.createElement('script');                    
+							scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    
+							vizElement.parentNode.insertBefore(scriptElement, vizElement);                
+						</script>
+						<br><br><br>
+
+
+						<!-- Three -->
+						<h3>American Wars</h3>
+						<p>I recently read a book about the American civil war and became somewhat intrigued by the other American wars that I hadn't been taught about at school. After some further reading online, I found some interesting data and decided to create this dashboard to make it easy to visualise.<br><br>
+						The first chart shows the timeline of all occasions when the USA have declared war, which excludes the Cold War and the American Frontier Wars. The chart at the bottom  shows the percentage of military service members killed and wounded in each war.<br><br>
+						If you click on a bar or item in the axis of each chart, more information about that war will appear at the bottom left.  </p>
+						<div class='tableauPlaceholder' id='viz1602081569733' style='position: relative; margin: auto;'>
+							<noscript>
+								<a href='#'>
+									<img alt=' ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Am&#47;American_wars&#47;AmericanWars&#47;1_rss.png' style='border: none' />
+								</a>
+							</noscript>
+							<object class='tableauViz'  style='display:none;'>
+								<param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> 
+								<param name='embed_code_version' value='3' /> 
+								<param name='site_root' value='' />
+								<param name='name' value='American_wars&#47;AmericanWars' />
+								<param name='tabs' value='no' />
+								<param name='toolbar' value='yes' />
+								<param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Am&#47;American_wars&#47;AmericanWars&#47;1.png' /> 
+								<param name='animate_transition' value='yes' />
+								<param name='display_static_image' value='yes' />
+								<param name='display_spinner' value='yes' />
+								<param name='display_overlay' value='yes' />
+								<param name='display_count' value='yes' />
+								<param name='language' value='en-GB' />
+								<param name='filter' value='publish=yes' />
+							</object>
+						</div>                
+						<script type='text/javascript'>                    
+							var divElement = document.getElementById('viz1602081569733');                    
+							var vizElement = divElement.getElementsByTagName('object')[0];                    
+							if ( divElement.offsetWidth > 800 ) { 
+								vizElement.style.width='1000px';
+								vizElement.style.height='827px';
+							} else if ( divElement.offsetWidth > 500 ) { 
+								vizElement.style.width='1000px';
+								vizElement.style.height='827px';
+							} else { 
+								vizElement.style.width='100%';
+								vizElement.style.height='777px';
 							}                     
 							var scriptElement = document.createElement('script');                    
 							scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    
